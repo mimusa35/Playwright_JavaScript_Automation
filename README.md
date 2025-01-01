@@ -1,10 +1,10 @@
-## Playwright_JavaScript_Automation
+# Playwright_JavaScript_Automation
 A Playwright project for automating web application testing using JavaScript. Includes setup instructions, test examples, and execution commands for efficient browser-based automation.
 
-## Project Overview
+# Project Overview
 This repository provides a setup and example for testing web applications using Playwright with JavaScript. The project demonstrates how to install, set up, and write automated test scripts for verifying web pages.
 
-## Prerequisites
+# Prerequisites
 1. **Node.js Environment**
    - Install Node.js: [Download Node.js](https://nodejs.org/en)
    - Verify installation:
@@ -19,7 +19,7 @@ This repository provides a setup and example for testing web applications using 
 3. **Create Project Folder**
    - Create a folder on your local machine and open it in VS Code.
 
-## Installation Process
+# Installation Process
 1. Open the VS Code terminal and run the following command to initialize a Playwright project:
    ```bash
    npm init playwright@latest
@@ -27,11 +27,11 @@ This repository provides a setup and example for testing web applications using 
 
 2. Follow the prompts to set up the project.
 
-## Writing Tests Without CodeGen
-## Step 1: Create a Test File
+# Writing Tests Without CodeGen
+**Step 1: Create a Test File**
 - Create a new file in the `tests` folder with the extension `.spec.js` (e.g., `HomePage.spec.js`).
 
-## Step 2: Add Required Modules
+**Step 2: Add Required Modules**
 - Add the required `@playwright/test` modules for testing and validations.
 
 Example:
@@ -39,13 +39,13 @@ Example:
 const { test, expect } = require('@playwright/test');
 ```
 
-## Step 3: Create a Test Block
+**Step 3: Create a Test Block**
 - Write a test block with a title and an asynchronous anonymous function.
 - Use `page.goto()` to navigate to the application URL.
 - Use `await` and `async` for handling JavaScript promises to ensure step-by-step execution.
 
 
-## Running Tests
+# Running Tests
 Use the following commands to execute your tests:
 
 1. Run all tests on all browsers in headless mode:
@@ -93,7 +93,7 @@ Use the following commands to execute your tests:
    npx playwright show-report
    ```
 
-## Folder Structure
+# Folder Structure
 ```
 project-folder/
 ├── tests/
@@ -104,7 +104,7 @@ project-folder/
 └── README.md
 ```
 
-## Resources
+# Resources
 - [Playwright Official Documentation](https://playwright.dev/)
 - [Node.js Official Website](https://nodejs.org/en)
 - [VS Code Official Website](https://code.visualstudio.com/)
