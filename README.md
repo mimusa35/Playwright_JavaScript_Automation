@@ -99,8 +99,8 @@ project-folder/
 ├── tests/
 │   ├── HomePage.spec.js
 ├── node_modules/
-├── package.json
-├── playwright.config.js
+├── package.json   #node project management file
+├── playwright.config.js  #playwright configuration 
 └── README.md
 ```
 
