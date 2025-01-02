@@ -95,4 +95,3 @@ project-folder/
 - [Playwright Official Documentation](https://playwright.dev/)
 - [Node.js Official Website](https://nodejs.org/en)
 - [VS Code Official Website](https://code.visualstudio.com/)
-- [VS Code Official Website](https://code.visualstudio.com/)
