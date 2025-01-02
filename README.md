@@ -1,8 +1,8 @@
 # Playwright_JavaScript_Automation
-A Playwright project for automating web application testing using JavaScript. Includes setup instructions, test examples, and execution commands for efficient browser-based automation.
+A Playwright project for automating web application testing using JavaScript. This repository includes setup instructions, example test scripts, and commands for executing automated browser-based tests efficiently.
 
 # Project Overview
-This repository provides a setup and example for testing web applications using Playwright with JavaScript. The project demonstrates how to install, set up, and write automated test scripts for verifying web pages.
+This repository demonstrates how to use Playwright with JavaScript for testing web applications. It provides a step-by-step guide to installation, setup, and writing tests, along with detailed execution commands.
 
 # Prerequisites
 1. **Node.js Environment**
@@ -58,37 +58,17 @@ Use the following commands to execute your tests:
    npx playwright test HomePage.spec.js
    ```
 
-3. Run specific files:
-   ```bash
-   npx playwright test HomePage.spec.js HomePage1.spec.js
-   ```
-
-4. Run a specific test file on Chromium browser in headed mode:
+3. Run a specific test file on Chromium browser in headed mode:
    ```bash
    npx playwright test HomePage.spec.js --project=chromium --headed
    ```
 
-5. Run tests by title:
-   ```bash
-   npx playwright test -g "test title"
-   ```
-
-6. Run tests on a specific browser:
-   ```bash
-   npx playwright test --project=chromium
-   ```
-
-7. Debug tests:
+4. Debug tests:
    ```bash
    npx playwright test --debug
    ```
 
-8. Debug specific test file:
-   ```bash
-   npx playwright test HomePage.spec.js --debug
-   ```
-
-9. Generate an HTML report:
+5. Generate an HTML report:
    ```bash
    npx playwright show-report
    ```
@@ -96,12 +76,18 @@ Use the following commands to execute your tests:
 # Folder Structure
 ```
 project-folder/
-├── tests/                         # Folder containing test files
-│   ├── HomePage.spec.js           # Example test script
-├── node_modules/                  # Contains all installed Node.js dependencies
-├── package.json                   # Node project management file
-├── playwright.config.js           # Playwright configuration file
-└── README.md                      # Project documentation
+├── .github/workflows/playwright.yml  # GitHub Actions workflow for CI
+├── node_modules/                     # Contains all installed Node.js dependencies
+├── playwright-report/                # Stores HTML test reports
+├── test-results/                     # Stores test result logs and screenshots
+├── tests/                            # Folder containing test files
+│   ├── HomePage.spec.js              # Home Page test script
+│   ├── Locators.spec.js              # Locator examples
+├── .gitignore                        # Ignored files and folders
+├── package-lock.json                 # Lockfile for dependency management
+├── package.json                      # Node project management file
+├── playwright.config.js              # Playwright configuration file
+└── README.md                         # Project documentation
 
 ```
 
