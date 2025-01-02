@@ -96,12 +96,13 @@ Use the following commands to execute your tests:
 # Folder Structure
 ```
 project-folder/
-├── tests/
-│   ├── HomePage.spec.js
-├── node_modules/
-├── package.json   #node project management file
-├── playwright.config.js  #playwright configuration 
-└── README.md
+├── tests/                         # Folder containing test files
+│   ├── HomePage.spec.js           # Example test script
+├── node_modules/                  # Contains all installed Node.js dependencies
+├── package.json                   # Node project management file
+├── playwright.config.js           # Playwright configuration file
+└── README.md                      # Project documentation
+
 ```
 
 # Resources
