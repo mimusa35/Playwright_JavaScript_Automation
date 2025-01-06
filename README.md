@@ -92,6 +92,11 @@ project-folder/
 
 ```
 
+# Test Scenarios Covered
+- 'HomePage.spec.js': Validates the title and URL of the [Demoblaze](https://www.demoblaze.com/index.html) homepage.
+- 'Locators.spec.js': Demonstrates the use of locators (CSS, XPath) for testing login functionality and retrieving web elements like links and product names.
+- 'Locator_builtin.spec.js': Explores Playwright's built-in locators like 'getByAltText', 'getByPlaceholder', 'getByRole', etc., through a login scenario on the [OrangeHRM](https://opensource-demo.orangehrmlive.com/web/index.php/auth/login) demo site.
+
 # Resources
 - [Playwright Official Documentation](https://playwright.dev/)
 - [Node.js Official Website](https://nodejs.org/en)
