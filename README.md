@@ -82,7 +82,8 @@ project-folder/
 ├── test-results/                     # Stores test result logs and screenshots
 ├── tests/                            # Folder containing test files
 │   ├── HomePage.spec.js              # Home Page test script
-│   ├── Locators.spec.js              # Locator examples
+│   ├── Locators.spec.js              # Locators test script
+│   ├── Locator_builtin.spec.js       # Built-in Locators test script
 ├── .gitignore                        # Ignored files and folders
 ├── package-lock.json                 # Lockfile for dependency management
 ├── package.json                      # Node project management file
