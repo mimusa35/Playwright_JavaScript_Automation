@@ -26,24 +26,33 @@ This repository demonstrates how to use Playwright with JavaScript for testing w
    ```
 
 2. Follow the prompts to set up the project.
+# Test Scripts
+- `HomePage.spec.js`: Validates the title and URL of the [Demoblaze](https://www.demoblaze.com/index.html) homepage.
+- `Locators.spec.js`: Demonstrates the use of locators (CSS, XPath) for testing login functionality and retrieving web elements like links and product names.
+- `Locator_builtin.spec.js`: Explores Playwright's built-in locators like `getByAltText`, `getByPlaceholder`, `getByRole`, etc., through a login scenario on the [OrangeHRM](https://opensource-demo.orangehrmlive.com/web/index.php/auth/login) demo site.
+- `CodeGen.spec.js`: A test generated using Playwright's CodeGen tool to automate login, add a product to the cart, and log out on [Demoblaze](https://www.demoblaze.com/index.html).
+- `Assertions.spec.js`: Demonstrates the usage of hard assertions like `toHaveURL`, `toHaveTitle`, `toBeVisible`, `toBeEnabled`, `toBeChecked`, `toHaveText`, and `toHaveCount`, etc.,to validate various web elements and their attributes on the [NopCommerce Register Page](https://demo.nopcommerce.com/register).
 
-# Writing Tests Without CodeGen
-**Step 1: Create a Test File**
-- Create a new file in the `tests` folder with the extension `.spec.js` (e.g., `HomePage.spec.js`).
-
-**Step 2: Add Required Modules**
-- Add the required `@playwright/test` modules for testing and validations.
-
-Example:
-```javascript
-const { test, expect } = require('@playwright/test');
+# Folder Structure
 ```
-
-**Step 3: Create a Test Block**
-- Write a test block with a title and an asynchronous anonymous function.
-- Use `page.goto()` to navigate to the application URL.
-- Use `await` and `async` for handling JavaScript promises to ensure step-by-step execution.
-
+project-folder/  
+├── .github/workflows/playwright.yml  # GitHub Actions workflow for CI  
+├── node_modules/                     # Contains all installed Node.js dependencies  
+├── playwright-report/                # Stores HTML test reports  
+├── test-results/                     # Stores test result logs and screenshots  
+├── tests/                            # Folder containing test files  
+│   ├── HomePage.spec.js              # Home Page test script  
+│   ├── Locators.spec.js              # Locators test script  
+│   ├── Locator_builtin.spec.js       # Built-in Locators test script  
+│   ├── Assertions.spec.js            # Hard Assertions test script  
+│   ├── CodeGen.spec.js               # CodeGen-generated test script  
+├── .gitignore                        # Ignored files and folders  
+├── package-lock.json                 # Lockfile for dependency management  
+├── package.json                      # Node project management file  
+├── playwright.config.js              # Playwright configuration file  
+└── README.md                         # Project documentation  
+ 
+```
 
 # Running Tests
 Use the following commands to execute your tests:
@@ -100,32 +109,6 @@ The Playwright test generator helps record and generate tests automatically. You
    ```bash
    npx playwright codegen --viewport-size="1280,720"        
    ```
-
-# Folder Structure
-```
-project-folder/  
-├── .github/workflows/playwright.yml  # GitHub Actions workflow for CI  
-├── node_modules/                     # Contains all installed Node.js dependencies  
-├── playwright-report/                # Stores HTML test reports  
-├── test-results/                     # Stores test result logs and screenshots  
-├── tests/                            # Folder containing test files  
-│   ├── HomePage.spec.js              # Home Page test script  
-│   ├── Locators.spec.js              # Locators test script  
-│   ├── Locator_builtin.spec.js       # Built-in Locators test script  
-│   ├── CodeGen.spec.js               # CodeGen-generated test script  
-├── .gitignore                        # Ignored files and folders  
-├── package-lock.json                 # Lockfile for dependency management  
-├── package.json                      # Node project management file  
-├── playwright.config.js              # Playwright configuration file  
-└── README.md                         # Project documentation  
-
-```
-
-# Test Scripts
-- `HomePage.spec.js`: Validates the title and URL of the [Demoblaze](https://www.demoblaze.com/index.html) homepage.
-- `Locators.spec.js`: Demonstrates the use of locators (CSS, XPath) for testing login functionality and retrieving web elements like links and product names.
-- `Locator_builtin.spec.js`: Explores Playwright's built-in locators like `getByAltText`, `getByPlaceholder`, `getByRole`, etc., through a login scenario on the [OrangeHRM](https://opensource-demo.orangehrmlive.com/web/index.php/auth/login) demo site.
-- `CodeGen.spec.js`: A test generated using Playwright's CodeGen tool to automate login, add a product to the cart, and log out on [Demoblaze](https://www.demoblaze.com/index.html).
 
 # Resources
 - [Playwright Official Documentation](https://playwright.dev/)
