@@ -32,6 +32,7 @@ This repository demonstrates how to use Playwright with JavaScript for testing w
 - `Locator_builtin.spec.js`: Explores Playwright's built-in locators like `getByAltText`, `getByPlaceholder`, `getByRole`, etc., through a login scenario on the [OrangeHRM](https://opensource-demo.orangehrmlive.com/web/index.php/auth/login) demo site.
 - `CodeGen.spec.js`: A test generated using Playwright's CodeGen tool to automate login, add a product to the cart, and log out on [Demoblaze](https://www.demoblaze.com/index.html).
 - `Assertions.spec.js`: Demonstrates the usage of hard assertions like `toHaveURL`, `toHaveTitle`, `toBeVisible`, `toBeEnabled`, `toBeChecked`, `toHaveText`, and `toHaveCount`, etc.,to validate various web elements and their attributes on the [NopCommerce Register Page](https://demo.nopcommerce.com/register).
+- `Soft_Assertions.spec.js`: Demonstrates the usage of soft assertions that allow multiple assertions to execute even if one fails, using the [Demoblaze](https://www.demoblaze.com/index.html) homepage.
 
 # Folder Structure
 ```
@@ -45,6 +46,7 @@ project-folder/
 │   ├── Locators.spec.js              # Locators test script  
 │   ├── Locator_builtin.spec.js       # Built-in Locators test script  
 │   ├── Assertions.spec.js            # Hard Assertions test script  
+│   ├── Soft_Assertions.spec.js       # Soft Assertions test script  
 │   ├── CodeGen.spec.js               # CodeGen-generated test script  
 ├── .gitignore                        # Ignored files and folders  
 ├── package-lock.json                 # Lockfile for dependency management  
