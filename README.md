@@ -112,6 +112,17 @@ The Playwright test generator helps record and generate tests automatically. You
    npx playwright codegen --viewport-size="1280,720"        
    ```
 
+# Handling Test Failures
+To ensure that soft assertion failures or intentional test failures (like in `Soft_Assertions.spec.js`) do not fail the entire CI workflow, the playwright.yml file has been modified:
+   ```yaml
+   - name: Run Playwright tests
+  run: npx playwright test || true
+   ```
+This ensures:
+- The workflow will complete successfully even if some tests fail.
+- The test report will still include all test results, which can be reviewed for failures or issues.
+
+
 # Resources
 - [Playwright Official Documentation](https://playwright.dev/)
 - [Node.js Official Website](https://nodejs.org/en)
