@@ -15,7 +15,7 @@ test('Handle Inputbox', async ({ page }) => {
 test('Handle Radio Button', async ({ page }) => {
   await page.goto('https://demo.nopcommerce.com/register');
   
-  ////select the male radio Button (locator-- CSS with the id) 
+  // select the male radio Button (locator-- CSS with the id) 
   await page.locator('#gender-male').check();
   //await page.locator('#gender-male').click();
   await expect(await page.locator('#gender-male')).toBeChecked();
@@ -38,6 +38,7 @@ test('Handle Checkbox', async ({ page }) => {
     "//input[@id='id_checkboxes_1']",
     "//input[@id='id_checkboxes_2']"
   ];
+  
 for(const locators of checkboxLocators)   // Select Multiple checkbox
 {
     await page.locator(locators).check();
@@ -51,5 +52,4 @@ for(const locators of checkboxLocators)   // UnSelect Multiple checkbox which ar
       await page.locator(locators).uncheck();
     }   
 }
-
-});
+});         
