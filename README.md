@@ -1,7 +1,9 @@
 # Playwright_JavaScript_Automation
 A Playwright project for automating web application testing using JavaScript. This repository includes setup instructions, example test scripts, and commands for executing automated browser-based tests efficiently.
+
 # Project Overview
 This repository demonstrates how to use Playwright with JavaScript for testing web applications. It provides a step-by-step guide to installation, setup, writing tests, using the Playwright test generator (CodeGen), and executing tests.
+
 # Prerequisites
 1. **Node.js Environment**
    - Install Node.js: [Download Node.js](https://nodejs.org/en)
@@ -14,12 +16,14 @@ This repository demonstrates how to use Playwright with JavaScript for testing w
    - Install VS Code: [Download VS Code](https://code.visualstudio.com/download)
 3. **Create Project Folder**
    - Create a folder on your local machine and open it in VS Code.
+
 # Installation Process
 1. Open the VS Code terminal and run the following command to initialize a Playwright project:
    ```bash
    npm init playwright@latest
    ```
 2. Follow the prompts to set up the project.
+
 # Test Scripts
 - `HomePage.spec.js`: Validates the title and URL of the [Demoblaze](https://www.demoblaze.com/index.html) homepage.
 - `Locators.spec.js`: Demonstrates the use of locators (CSS, XPath) for testing login functionality and retrieving web elements like links and product names.
@@ -27,6 +31,8 @@ This repository demonstrates how to use Playwright with JavaScript for testing w
 - `CodeGen.spec.js`: A test generated using Playwright's CodeGen tool to automate login, add a product to the cart, and log out on [Demoblaze](https://www.demoblaze.com/index.html).
 - `Assertions.spec.js`: Demonstrates the usage of hard assertions like `toHaveURL`, `toHaveTitle`, `toBeVisible`, `toBeEnabled`, `toBeChecked`, `toHaveText`, and `toHaveCount`, etc.,to validate various web elements and their attributes on the [NopCommerce Register Page](https://demo.nopcommerce.com/register).
 - `Soft_Assertions.spec.js`: Demonstrates the usage of soft assertions that allow multiple assertions to execute even if one fails, using the [Demoblaze](https://www.demoblaze.com/index.html) homepage.
+- `HandlingWebElements.spec.js`: Demonstrates handling input boxes, radio buttons, and checkboxes, including selecting/deselecting multiple checkboxes on web pages like [NopCommerce Register Page](https://demo.nopcommerce.com/register) and [QA Practice Checkbox Page](https://www.qa-practice.com/elements/checkbox/mult_checkbox).
+
 
 # Folder Structure
 ```
@@ -42,12 +48,14 @@ project-folder/
 │   ├── Assertions.spec.js            # Hard Assertions test script  
 │   ├── Soft_Assertions.spec.js       # Soft Assertions test script  
 │   ├── CodeGen.spec.js               # CodeGen-generated test script  
+│   ├── HandlingWebElements.spec.js   # Handling Web Elements test script  
 ├── .gitignore                        # Ignored files and folders  
 ├── package-lock.json                 # Lockfile for dependency management  
 ├── package.json                      # Node project management file  
 ├── playwright.config.js              # Playwright configuration file  
 └── README.md                         # Project documentation  
 ```
+
 # Running Tests
 Use the following commands to execute your tests:
 1. Run all tests on all browsers in headless mode:
@@ -70,6 +78,7 @@ Use the following commands to execute your tests:
    ```bash
    npx playwright show-report
    ```
+
 # Writing Tests with CodeGen (Test Generator)
 The Playwright test generator helps record and generate tests automatically. You can use the following methods to generate and save your test scripts:
 1. Run the following command to launch the Playwright Inspector and browser for recording:
@@ -96,6 +105,7 @@ The Playwright test generator helps record and generate tests automatically. You
    ```bash
    npx playwright codegen --viewport-size="1280,720"        
    ```
+
 # Handling Test Failures
 To ensure that soft assertion failures or intentional test failures (like in `Soft_Assertions.spec.js`) do not fail the entire CI workflow, the playwright.yml file has been modified:
    ```yaml
@@ -103,6 +113,7 @@ To ensure that soft assertion failures or intentional test failures (like in `So
      run: npx playwright test || true
    ```
 This will ensure that the workflow does not fail even if some tests fail. The test report will still include all test results, which can be reviewed for failures or issues.
+
 # Resources
 - [Playwright Official Documentation](https://playwright.dev/)
 - [Node.js Official Website](https://nodejs.org/en)
