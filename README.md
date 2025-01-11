@@ -32,7 +32,7 @@ This repository demonstrates how to use Playwright with JavaScript for testing w
 - `Assertions.spec.js`: Demonstrates the usage of hard assertions like `toHaveURL`, `toHaveTitle`, `toBeVisible`, `toBeEnabled`, `toBeChecked`, `toHaveText`, and `toHaveCount`, etc.,to validate various web elements and their attributes on the [NopCommerce Register Page](https://demo.nopcommerce.com/register).
 - `Soft_Assertions.spec.js`: Demonstrates the usage of soft assertions that allow multiple assertions to execute even if one fails, using the [Demoblaze](https://www.demoblaze.com/index.html) homepage.
 - `HandlingWebElements.spec.js`: Demonstrates handling input boxes, radio buttons, and checkboxes, including selecting/deselecting multiple checkboxes on web pages like [NopCommerce Register Page](https://demo.nopcommerce.com/register) and [QA Practice Checkbox Page](https://www.qa-practice.com/elements/checkbox/mult_checkbox).
-- `DropDown.spec.js`: Demonstrates how to handle single-selection dropdowns, including selecting options by label, value, or index, validating the dropdown options, and checking for the presence of specific values. Example: [Test Automation Practice Page](https://testautomationpractice.blogspot.com/).
+- `DropDown.spec.js`: Demonstrates how to handle single-selection dropdowns, including selecting options by label, value, or index, validating the dropdown options, and checking for the presence of specific values on the [Test Automation Practice Page](https://testautomationpractice.blogspot.com/).
 
 
 
