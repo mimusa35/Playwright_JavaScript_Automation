@@ -33,31 +33,30 @@ This repository demonstrates how to use Playwright with JavaScript for testing w
 - `Soft_Assertions.spec.js`: Demonstrates the usage of soft assertions that allow multiple assertions to execute even if one fails, using the [Demoblaze](https://www.demoblaze.com/index.html) homepage.
 - `HandlingWebElements.spec.js`: Demonstrates handling input boxes, radio buttons, and checkboxes, including selecting/deselecting multiple checkboxes on web pages like [NopCommerce Register Page](https://demo.nopcommerce.com/register) and [QA Practice Checkbox Page](https://www.qa-practice.com/elements/checkbox/mult_checkbox).
 - `DropDown.spec.js`: Demonstrates how to handle single-selection dropdowns, including selecting options by label, value, or index, validating the dropdown options, and checking for the presence of specific values on the [Test Automation Practice Page](https://testautomationpractice.blogspot.com/).
-
-
+- `MultiSelectDropdown.spec.js`: Demonstrates handling multi-select dropdowns and validating the selected options on the [Test Automation Practice](https://testautomationpractice.blogspot.com/) page.
 
 # Folder Structure
 ```
-project-folder/
-├── .github/workflows/playwright.yml  # GitHub Actions workflow for CI
-├── node_modules/                     # Contains all installed Node.js dependencies
-├── playwright-report/                # Stores HTML test reports
-├── test-results/                     # Stores test result logs and screenshots
-├── tests/                            # Folder containing test files
-│   ├── HomePage.spec.js              # Home Page test script
-│   ├── Locators.spec.js              # Locators test script
-│   ├── Locator_builtin.spec.js       # Built-in Locators test script
-│   ├── Assertions.spec.js            # Hard Assertions test script
-│   ├── Soft_Assertions.spec.js       # Soft Assertions test script
-│   ├── CodeGen.spec.js               # CodeGen-generated test script
-│   ├── HandlingWebElements.spec.js   # Web elements handling test script
-│   ├── DropDown.spec.js              # Dropdown handling test script
-├── .gitignore                        # Ignored files and folders
-├── package-lock.json                 # Lockfile for dependency management
-├── package.json                      # Node project management file
-├── playwright.config.js              # Playwright configuration file
-└── README.md                         # Project documentation
-
+project-folder/  
+├── .github/workflows/playwright.yml  # GitHub Actions workflow for CI  
+├── node_modules/                     # Contains all installed Node.js dependencies  
+├── playwright-report/                # Stores HTML test reports  
+├── test-results/                     # Stores test result logs and screenshots  
+├── tests/                            # Folder containing test files  
+│   ├── HomePage.spec.js              # Home Page test script  
+│   ├── Locators.spec.js              # Locators test script  
+│   ├── Locator_builtin.spec.js       # Built-in Locators test script  
+│   ├── Assertions.spec.js            # Hard Assertions test script  
+│   ├── Soft_Assertions.spec.js       # Soft Assertions test script  
+│   ├── CodeGen.spec.js               # CodeGen-generated test script  
+│   ├── HandlingWebElements.spec.js   # Handling input boxes, radio buttons, checkboxes  
+│   ├── DropDown.spec.js              # Handling single-selection dropdowns  
+│   ├── MultiSelectDropdown.spec.js   # Handling multi-select dropdowns  
+├── .gitignore                        # Ignored files and folders  
+├── package-lock.json                 # Lockfile for dependency management  
+├── package.json                      # Node project management file  
+├── playwright.config.js              # Playwright configuration file  
+└── README.md                         # Project documentation  
 ```
 
 # Running Tests
