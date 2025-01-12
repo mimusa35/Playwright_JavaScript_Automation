@@ -34,6 +34,7 @@ This repository demonstrates how to use Playwright with JavaScript for testing w
 - `HandlingWebElements.spec.js`: Demonstrates handling input boxes, radio buttons, and checkboxes, including selecting/deselecting multiple checkboxes on web pages like [NopCommerce Register Page](https://demo.nopcommerce.com/register) and [QA Practice Checkbox Page](https://www.qa-practice.com/elements/checkbox/mult_checkbox).
 - `DropDown.spec.js`: Demonstrates how to handle single-selection dropdowns, including selecting options by label, value, or index, validating the dropdown options, and checking for the presence of specific values on the [Test Automation Practice Page](https://testautomationpractice.blogspot.com/).
 - `MultiSelectDropdown.spec.js`: Demonstrates handling multi-select dropdowns and validating the selected options on the [Test Automation Practice](https://testautomationpractice.blogspot.com/) page.
+- `BootstrapDropdown.spec.js`: Automates testing of a Bootstrap-styled multi-select dropdown, including counting options, selecting multiple options (e.g., Angular, Java), and deselecting options (e.g., HTML, CSS) on the [Bootstrap Demo](https://www.jquery-az.com/boots/demo.php?ex=63.0_2) page.
 
 # Folder Structure
 ```
@@ -49,14 +50,15 @@ project-folder/
 │   ├── Assertions.spec.js            # Hard Assertions test script  
 │   ├── Soft_Assertions.spec.js       # Soft Assertions test script  
 │   ├── CodeGen.spec.js               # CodeGen-generated test script  
-│   ├── HandlingWebElements.spec.js   # Handling input boxes, radio buttons, checkboxes  
-│   ├── DropDown.spec.js              # Handling single-selection dropdowns  
-│   ├── MultiSelectDropdown.spec.js   # Handling multi-select dropdowns  
+│   ├── HandlingWebElements.spec.js   # Web Elements test script  
+│   ├── DropDown.spec.js              # Single-selection Dropdown test script  
+│   ├── MultiSelectDropdown.spec.js   # Multi-selection Dropdown test script  
+│   ├── BootstrapDropdown.spec.js     # Bootstrap Dropdown test script  
 ├── .gitignore                        # Ignored files and folders  
 ├── package-lock.json                 # Lockfile for dependency management  
 ├── package.json                      # Node project management file  
 ├── playwright.config.js              # Playwright configuration file  
-└── README.md                         # Project documentation  
+└── README.md                         # Project documentation
 ```
 
 # Running Tests
