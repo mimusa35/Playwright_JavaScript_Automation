@@ -3,7 +3,6 @@ const {test, expect}=require('@playwright/test')
 test.setTimeout(7000);
 
 test("Handle Single Selection dropdown",async ({page})=>{
-
     await page.goto('https://testautomationpractice.blogspot.com/');
 
   // Ensure dropdown is visible
@@ -49,7 +48,7 @@ test("Handle Single Selection dropdown",async ({page})=>{
 
   //4) check presence of value/ particular value is present or not in the dropdown - Approach 2 - using looping
   // In case of bootstrap or there is no select tag
-   const dropdownContent = await page.$$('#country option')//Captures all <option> elements inside country dropdown in an array. 
+   const dropdownContent = await page.$$('#country option')//Captures all <option> elements inside country dropdown in array. 
    let status=false;  
    //Initializes a variable status with false. It's a flag used to indicate whether the option "India" is found or not. 
    //Initially, it's set to false because the search hasn't started yet.
